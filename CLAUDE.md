@@ -34,6 +34,7 @@
 │   ├── publications.json   # 자동 생성. 수동 편집 금지
 │   ├── config.json         # OpenAlex 저자 ID, 이름 표기, 제외 DOI
 │   ├── manual_pubs.json    # OpenAlex에 없는 항목만 수동 추가 (선택)
+│   ├── covers.json         # Home 저널 표지 회전목마 (이미지는 assets/img/covers/*.webp, 폭 400px)
 │   └── last_checked.txt    # 워크플로 월 1회 확인 날짜 (60일 비활성화 방지)
 ├── scripts/
 │   └── fetch_pubs.py
@@ -47,7 +48,7 @@ Home, The Team, Research, Publications, News 5개. Lab tour 페이지는 만들�
 
 | 페이지 | 내용 |
 |---|---|
-| Home | Hero, 연구실 소개 문장, 연구 분야 요약 3개, 최근 논문 5편, 최근 뉴스 3건, 연락처 및 지도 링크 |
+| Home | Hero, 연구실 소개 문장과 저널 표지 회전목마, 연구 분야 요약 3개, 최근 논문 5편, 최근 뉴스 3건, 연락처 및 지도 링크 |
 | The Team | PI 소개, 구성원(연구원, 학생), 졸업생. 기존 사이트 내용 이전 |
 | Research | 연구 주제 소개. 기존 사이트 내용 이전 |
 | Publications | 자동 수집 논문 목록 (연도별 그룹) + Google Scholar 프로필 링크 |

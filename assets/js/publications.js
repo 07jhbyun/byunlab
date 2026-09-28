@@ -83,11 +83,6 @@
     if (!list) return;
     const n = parseInt(list.dataset.count, 10) || 5;
     list.innerHTML = items.slice(0, n).map(item => pubItem(item, highlight)).join('');
-
-    const pubs = document.getElementById('fact-pubs');
-    const covers = document.getElementById('fact-covers');
-    if (pubs) pubs.textContent = items.length;
-    if (covers) covers.textContent = items.reduce((n, item) => n + (item.covers || []).length, 0);
   }
 
   // ---- Research page ------------------------------------------------------------

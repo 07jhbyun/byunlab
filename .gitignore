@@ -4,3 +4,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .env
+
+# Original cover images (only optimized WebP in assets/img/covers/ is committed)
+assets/img/cover/

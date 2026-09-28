@@ -1,0 +1,61 @@
+{
+  "rotate_seconds": 3,
+  "items": [
+    {
+      "image": "assets/img/covers/joule-2026.webp",
+      "journal": "Joule",
+      "year": 2026,
+      "label": "Cover",
+      "paper_doi": "https://doi.org/10.1016/j.joule.2026.102603",
+      "cover_url": null
+    },
+    {
+      "image": "assets/img/covers/chem-eur-j-2025.webp",
+      "journal": "Chemistry - A European Journal",
+      "year": 2025,
+      "label": "Front Cover",
+      "paper_doi": "https://doi.org/10.1002/chem.202500967",
+      "cover_url": "https://doi.org/10.1002/chem.202583901"
+    },
+    {
+      "image": "assets/img/covers/small-2025.webp",
+      "journal": "Small",
+      "year": 2025,
+      "label": "Inside Front Cover",
+      "paper_doi": "https://doi.org/10.1002/smll.202501398",
+      "cover_url": "https://doi.org/10.1002/smll.202570209"
+    },
+    {
+      "image": "assets/img/covers/adv-funct-mater-2025.webp",
+      "journal": "Advanced Functional Materials",
+      "year": 2025,
+      "label": "Cover Picture",
+      "paper_doi": "https://doi.org/10.1002/adfm.202411661",
+      "cover_url": "https://doi.org/10.1002/adfm.202570013"
+    },
+    {
+      "image": "assets/img/covers/chemcatchem-2024.webp",
+      "journal": "ChemCatChem",
+      "year": 2024,
+      "label": "Cover Feature",
+      "paper_doi": "https://doi.org/10.1002/cctc.202400981",
+      "cover_url": "https://doi.org/10.1002/cctc.202482102"
+    },
+    {
+      "image": "assets/img/covers/angew-2023.webp",
+      "journal": "Angewandte Chemie International Edition",
+      "year": 2023,
+      "label": "Inside Cover",
+      "paper_doi": "https://doi.org/10.1002/anie.202304378",
+      "cover_url": "https://doi.org/10.1002/anie.202306118"
+    },
+    {
+      "image": "assets/img/covers/ees-2022.webp",
+      "journal": "Energy & Environmental Science",
+      "year": 2022,
+      "label": "Front Cover",
+      "paper_doi": "https://doi.org/10.1039/d2ee02504c",
+      "cover_url": "https://pubs.rsc.org/en/content/articlelanding/2022/ee/d2ee90071h"
+    }
+  ]
+}
