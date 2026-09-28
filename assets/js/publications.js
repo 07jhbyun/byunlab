@@ -147,9 +147,10 @@
   const needsData = ['tip', 'pub-list', 'recent-pubs'].some(id => document.getElementById(id));
   if (!needsData) return;
 
-  const getJson = url => fetch(url).then(r => { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); });
+  const getJson = (url, options) => fetch(url, options).then(r => { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); });
 
-  Promise.all([getJson(DATA_URL), getJson(CONFIG_URL).catch(() => ({}))])
+  // publications.json changes weekly; revalidate with the server so a stale cached list is never shown.
+  Promise.all([getJson(DATA_URL, { cache: 'no-cache' }), getJson(CONFIG_URL).catch(() => ({}))])
     .then(([data, config]) => {
       const items = (data.items || []).slice().sort(byDateDesc);
       const highlight = new Set((config.highlight_names || []).map(nameKey));
