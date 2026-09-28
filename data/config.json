@@ -1,0 +1,55 @@
+{
+  "openalex_author_ids": [
+    "A5024107900"
+  ],
+  "highlight_names": [
+    "J. Byun",
+    "Jeehye Byun",
+    "Byun J",
+    "Ji-Hye Byun"
+  ],
+  "exclude_dois": [
+    "https://doi.org/10.1002/chin.201547225",
+    "https://doi.org/10.1002/ange.202304378",
+    "https://doi.org/10.1002/ange.201801112",
+    "https://doi.org/10.1002/ange.201711773",
+    "https://doi.org/10.2139/ssrn.4092990",
+    "https://doi.org/10.1149/ma2023-02472383mtgabs",
+    "https://doi.org/10.1007/978-3-319-05041-6_13",
+    "https://doi.org/10.4122/dtu:267",
+    "https://doi.org/10.1002/ange.202306118"
+  ],
+  "min_year": 2012,
+  "covers": [
+    {
+      "parent_doi": "https://doi.org/10.1002/chem.202500967",
+      "doi": "https://doi.org/10.1002/chem.202583901",
+      "label": "Front Cover"
+    },
+    {
+      "parent_doi": "https://doi.org/10.1002/smll.202501398",
+      "doi": "https://doi.org/10.1002/smll.202570209",
+      "label": "Inside Front Cover"
+    },
+    {
+      "parent_doi": "https://doi.org/10.1002/adfm.202411661",
+      "doi": "https://doi.org/10.1002/adfm.202570013",
+      "label": "Cover Picture"
+    },
+    {
+      "parent_doi": "https://doi.org/10.1002/cctc.202400981",
+      "doi": "https://doi.org/10.1002/cctc.202482102",
+      "label": "Cover Feature"
+    },
+    {
+      "parent_doi": "https://doi.org/10.1002/anie.202304378",
+      "doi": "https://doi.org/10.1002/anie.202306118",
+      "label": "Inside Cover"
+    },
+    {
+      "parent_doi": "https://doi.org/10.1039/d2ee02504c",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2022/ee/d2ee90071h",
+      "label": "Front Cover"
+    }
+  ]
+}

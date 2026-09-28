@@ -1,0 +1,1082 @@
+{
+  "updated": "2026-09-28",
+  "count": 54,
+  "items": [
+    {
+      "title": "Feature engineering improves cross-mode generalization in machine learning-based prediction of membrane capacitive deionization",
+      "authors": [
+        "N. Jeong",
+        "Z. Ullah",
+        "J. Byun",
+        "J. S. Kang",
+        "M. Son"
+      ],
+      "journal": "Chemical Engineering Journal Advances",
+      "volume": "28",
+      "issue": null,
+      "pages": "101434",
+      "year": 2026,
+      "date": "2026-08-22",
+      "doi": "https://doi.org/10.1016/j.ceja.2026.101434",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "High-throughput discovery of organic working solutions enabling radical photochemistry for scalable H2O2 production",
+      "authors": [
+        "H. Cho",
+        "Z. Ullah",
+        "S. Kumar",
+        "S. Kim",
+        "B. Bayarkhuu",
+        "X. Zhou",
+        "Y. Li",
+        "S. Kim",
+        "M. Son",
+        "J. Chung",
+        "J. Byun"
+      ],
+      "journal": "Joule",
+      "volume": null,
+      "issue": null,
+      "pages": "102603",
+      "year": 2026,
+      "date": "2026-08-01",
+      "doi": "https://doi.org/10.1016/j.joule.2026.102603",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Emerging Trends in Organic Photoreactions Utilizing Disulfides",
+      "authors": [
+        "S. Kumar",
+        "B. Bayarkhuu",
+        "H. Y. Cho",
+        "J. Byun"
+      ],
+      "journal": "European Journal of Organic Chemistry",
+      "volume": "29",
+      "issue": "21",
+      "pages": null,
+      "year": 2026,
+      "date": "2026-05-02",
+      "doi": "https://doi.org/10.1002/ejoc.202501231",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Surface functionalized binding groups control photocatalytic rates of conjugated microporous polymers",
+      "authors": [
+        "J. Heuer",
+        "J. Kaur",
+        "S. Kim",
+        "J. Byun",
+        "R. Graf",
+        "K. Landfester",
+        "C. T. J. Ferguson"
+      ],
+      "journal": "RSC Applied Polymers",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": 2026,
+      "date": "2026-01-01",
+      "doi": "https://doi.org/10.1039/d5lp00363f",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Occurrence, formation, and treatment implications of N-Nitrosamine risks in harvested waters",
+      "authors": [
+        "M. G. Seid",
+        "A. Son",
+        "W. W. Ejerssa",
+        "B. C. Moon",
+        "J. Byun",
+        "S. W. Hong"
+      ],
+      "journal": "Journal of Hazardous Materials",
+      "volume": "501",
+      "issue": null,
+      "pages": "140766",
+      "year": 2025,
+      "date": "2025-12-08",
+      "doi": "https://doi.org/10.1016/j.jhazmat.2025.140766",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Paired photoelectrochemical system for total nitrogen removal via engineered active sites in spaced TiO2 nanotube platform",
+      "authors": [
+        "A. Son",
+        "H. Cho",
+        "M. G. Seid",
+        "J. Han",
+        "B. C. Moon",
+        "J. Lee",
+        "J. Byun",
+        "S. W. Hong"
+      ],
+      "journal": "Water Research",
+      "volume": "282",
+      "issue": null,
+      "pages": "123915",
+      "year": 2025,
+      "date": "2025-05-27",
+      "doi": "https://doi.org/10.1016/j.watres.2025.123915",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Grafted Disulfide-Linked Linear Polymers for Heterogeneous Thiyl Radical Photocatalysis",
+      "authors": [
+        "S. Kumar",
+        "B. Bayarkhuu",
+        "J. Park",
+        "H. Y. Cho",
+        "J. Byun"
+      ],
+      "journal": "Chemistry - A European Journal",
+      "volume": "31",
+      "issue": "40",
+      "pages": "e202500967",
+      "year": 2025,
+      "date": "2025-05-25",
+      "doi": "https://doi.org/10.1002/chem.202500967",
+      "url": null,
+      "covers": [
+        {
+          "label": "Front Cover",
+          "doi": "https://doi.org/10.1002/chem.202583901",
+          "url": null
+        }
+      ]
+    },
+    {
+      "title": "Hierarchically Porous Poly(aryl thioether)s Through Dynamic Linker Engineering for Thiyl Radical Photocatalysis",
+      "authors": [
+        "S. Kumar",
+        "D. Kim",
+        "Y. Song",
+        "B. Bayarkhuu",
+        "J. Park",
+        "D. Hoh",
+        "C. T. Yavuz",
+        "J. Byun"
+      ],
+      "journal": "Small",
+      "volume": "21",
+      "issue": "27",
+      "pages": "e2501398",
+      "year": 2025,
+      "date": "2025-03-03",
+      "doi": "https://doi.org/10.1002/smll.202501398",
+      "url": null,
+      "covers": [
+        {
+          "label": "Inside Front Cover",
+          "doi": "https://doi.org/10.1002/smll.202570209",
+          "url": null
+        }
+      ]
+    },
+    {
+      "title": "A tribute to Professor Dr Kai A. I. Zhang: pioneering advances in metal-free polymeric photocatalysis",
+      "authors": [
+        "B. Bayarkhuu",
+        "S. Kumar",
+        "J. Byun"
+      ],
+      "journal": "Polymer International",
+      "volume": "75",
+      "issue": "1",
+      "pages": "34-43",
+      "year": 2025,
+      "date": "2025-02-28",
+      "doi": "https://doi.org/10.1002/pi.6754",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Engineering Single-Atom Catalysts on Conjugated Porphyrin Polymer Photocatalysts via E-Waste for Sustainable Photocatalysis",
+      "authors": [
+        "B. Bayarkhuu",
+        "H. Cho",
+        "G. Cho",
+        "J. Hong",
+        "Y. Hong",
+        "S.-W. Baek",
+        "S. Yang",
+        "C. T. Yavuz",
+        "H. S. Kim",
+        "J. Byun"
+      ],
+      "journal": "Advanced Functional Materials",
+      "volume": "35",
+      "issue": "3",
+      "pages": null,
+      "year": 2024,
+      "date": "2024-07-28",
+      "doi": "https://doi.org/10.1002/adfm.202411661",
+      "url": null,
+      "covers": [
+        {
+          "label": "Cover Picture",
+          "doi": "https://doi.org/10.1002/adfm.202570013",
+          "url": null
+        }
+      ]
+    },
+    {
+      "title": "Photoactive Conjugated Polyelectrolyte-Ionomer Composite Coatings for Versatile Photoreactors",
+      "authors": [
+        "B. Bayarkhuu",
+        "S. Kumar",
+        "H. Cho",
+        "J. Park",
+        "M. G. Seid",
+        "J. Byun"
+      ],
+      "journal": "ChemCatChem",
+      "volume": "16",
+      "issue": "21",
+      "pages": null,
+      "year": 2024,
+      "date": "2024-07-24",
+      "doi": "https://doi.org/10.1002/cctc.202400981",
+      "url": null,
+      "covers": [
+        {
+          "label": "Cover Feature",
+          "doi": "https://doi.org/10.1002/cctc.202482102",
+          "url": null
+        }
+      ]
+    },
+    {
+      "title": "From insoluble to processable: Aminic solvent dissolution of donor-acceptor conjugated network polymers for fabrication of photocatalytic thin film",
+      "authors": [
+        "S. Kumar",
+        "H. Cho",
+        "B. Bayarkhuu",
+        "C. T. J. Ferguson",
+        "J. Byun"
+      ],
+      "journal": "Chemical Engineering Journal",
+      "volume": "495",
+      "issue": null,
+      "pages": "153569",
+      "year": 2024,
+      "date": "2024-06-28",
+      "doi": "https://doi.org/10.1016/j.cej.2024.153569",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Desalination performance in versatile capacitive/battery deionization configurations using a cation intercalating electrode",
+      "authors": [
+        "B. K. Tarus",
+        "Z. Ullah",
+        "Y. A. C. Jande",
+        "K. N. Njau",
+        "J. Byun",
+        "M. Son"
+      ],
+      "journal": "Desalination",
+      "volume": "586",
+      "issue": null,
+      "pages": "117857",
+      "year": 2024,
+      "date": "2024-06-20",
+      "doi": "https://doi.org/10.1016/j.desal.2024.117857",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "The role of immobilization supports for light-assisted Suzuki coupling reaction with low-loading Pd nanocatalyst",
+      "authors": [
+        "B.-S. Kim",
+        "H. Cho",
+        "Y. Jeon",
+        "S.-H. Chun",
+        "B. Bayarkhuu",
+        "J. Byun",
+        "H. Lee"
+      ],
+      "journal": "Catalysis Communications",
+      "volume": "187",
+      "issue": null,
+      "pages": "106856",
+      "year": 2024,
+      "date": "2024-01-29",
+      "doi": "https://doi.org/10.1016/j.catcom.2024.106856",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Photocatalytic H2O2 production in controlled oxidative environments using covalent triazine frameworks",
+      "authors": [
+        "S. Kumar",
+        "B. Bayarkhuu",
+        "H. G. Ahn",
+        "H. Cho",
+        "J. Byun"
+      ],
+      "journal": "Nano Trends",
+      "volume": "4",
+      "issue": null,
+      "pages": "100023",
+      "year": 2023,
+      "date": "2023-09-26",
+      "doi": "https://doi.org/10.1016/j.nwnano.2023.100023",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Visible-light-induced self-propelled nanobots against nanoplastics",
+      "authors": [
+        "Y. Jung",
+        "S.-J. Yoon",
+        "J. Byun",
+        "K.-W. Jung",
+        "J.-W. Choi"
+      ],
+      "journal": "Water Research",
+      "volume": "244",
+      "issue": null,
+      "pages": "120543",
+      "year": 2023,
+      "date": "2023-08-29",
+      "doi": "https://doi.org/10.1016/j.watres.2023.120543",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Covalent Scrambling in Porous Polyarylthioethers through a Stepwise SNAr for Tunable Bandgap and Porosity",
+      "authors": [
+        "D. Kim",
+        "T. S. Nguyen",
+        "H. Lee",
+        "B. Bayarkhuu",
+        "V. Rozyyev",
+        "J. Byun",
+        "S. Li",
+        "C. T. Yavuz"
+      ],
+      "journal": "Angewandte Chemie International Edition",
+      "volume": "62",
+      "issue": "28",
+      "pages": "e202304378",
+      "year": 2023,
+      "date": "2023-04-12",
+      "doi": "https://doi.org/10.1002/anie.202304378",
+      "url": null,
+      "covers": [
+        {
+          "label": "Inside Cover",
+          "doi": "https://doi.org/10.1002/anie.202306118",
+          "url": null
+        }
+      ]
+    },
+    {
+      "title": "2D co-catalyst leads the charge in efficient photocatalytic water splitting",
+      "authors": [
+        "S. Kumar",
+        "H. Cho",
+        "J. Byun"
+      ],
+      "journal": "Chem Catalysis",
+      "volume": "3",
+      "issue": "3",
+      "pages": "100573",
+      "year": 2023,
+      "date": "2023-03-01",
+      "doi": "https://doi.org/10.1016/j.checat.2023.100573",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Doped and immobilized titanium dioxide photocatalysts as a potential source of nitrosamine formation",
+      "authors": [
+        "M. G. Seid",
+        "A. Son",
+        "K. Cho",
+        "J. Byun",
+        "S. W. Hong"
+      ],
+      "journal": "Water Research",
+      "volume": "230",
+      "issue": null,
+      "pages": "119573",
+      "year": 2023,
+      "date": "2023-01-03",
+      "doi": "https://doi.org/10.1016/j.watres.2023.119573",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Multifunctional photo-Fenton-active membrane for solar-driven water purification",
+      "authors": [
+        "S. Lee",
+        "B. Bayarkhuu",
+        "Y. Han",
+        "H.-W. Kim",
+        "S. Jeong",
+        "C. Boo",
+        "J. Byun"
+      ],
+      "journal": "Journal of Membrane Science",
+      "volume": "660",
+      "issue": null,
+      "pages": "120832",
+      "year": 2022,
+      "date": "2022-07-16",
+      "doi": "https://doi.org/10.1016/j.memsci.2022.120832",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Optimization of coagulation and sedimentation conditions by turbidity measurement for nano- and microplastic removal",
+      "authors": [
+        "B. Bayarkhuu",
+        "J. Byun"
+      ],
+      "journal": "Chemosphere",
+      "volume": "306",
+      "issue": null,
+      "pages": "135572",
+      "year": 2022,
+      "date": "2022-07-02",
+      "doi": "https://doi.org/10.1016/j.chemosphere.2022.135572",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Hydrophilic/hydrophobic dual surface coatings for membrane distillation desalination",
+      "authors": [
+        "H. W. Kim",
+        "S. Lee",
+        "S. Jeong",
+        "J. Byun"
+      ],
+      "journal": "Journal of Korean Society on Water Environment",
+      "volume": "38",
+      "issue": "3",
+      "pages": "143-149",
+      "year": 2022,
+      "date": "2022-05",
+      "doi": null,
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002845420",
+      "covers": []
+    },
+    {
+      "title": "Incorporation of Metal Active Sites on Porous Polycarbazoles for Photocatalytic CO2 Reduction",
+      "authors": [
+        "W. Wang",
+        "Y. Xi",
+        "C. Yang",
+        "J. Byun",
+        "J. Cheng",
+        "S. Wang",
+        "X. Wang"
+      ],
+      "journal": "ChemCatChem",
+      "volume": "14",
+      "issue": "7",
+      "pages": null,
+      "year": 2022,
+      "date": "2022-02-07",
+      "doi": "https://doi.org/10.1002/cctc.202101872",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Solar-driven H 2 O 2 production via cooperative auto- and photocatalytic oxidation in fine-tuned reaction media",
+      "authors": [
+        "B. C. Moon",
+        "B. Bayarkhuu",
+        "K. A. I. Zhang",
+        "D. K. Lee",
+        "J. Byun"
+      ],
+      "journal": "Energy & Environmental Science",
+      "volume": "15",
+      "issue": "12",
+      "pages": "5082-5092",
+      "year": 2022,
+      "date": "2022-01-01",
+      "doi": "https://doi.org/10.1039/d2ee02504c",
+      "url": null,
+      "covers": [
+        {
+          "label": "Front Cover",
+          "doi": null,
+          "url": "https://pubs.rsc.org/en/content/articlelanding/2022/ee/d2ee90071h"
+        }
+      ]
+    },
+    {
+      "title": "Changes in levels of N-nitrosamine formed from amine-containing compounds during chloramination via photocatalytic pretreatment with immobilized TiO2: Effect of source water and pH",
+      "authors": [
+        "M. G. Seid",
+        "J. Byun",
+        "W. Kim",
+        "K. Cho",
+        "S. W. Hong"
+      ],
+      "journal": "Journal of Hazardous Materials",
+      "volume": "424",
+      "issue": "Pt A",
+      "pages": "127398",
+      "year": 2021,
+      "date": "2021-10-01",
+      "doi": "https://doi.org/10.1016/j.jhazmat.2021.127398",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Beyond the batch: Process and material design of polymeric photocatalysts for flow photochemistry",
+      "authors": [
+        "J. Byun",
+        "Y. Hong",
+        "K. A. I. Zhang"
+      ],
+      "journal": "Chem Catalysis",
+      "volume": "1",
+      "issue": "4",
+      "pages": "771-781",
+      "year": 2021,
+      "date": "2021-09-01",
+      "doi": "https://doi.org/10.1016/j.checat.2021.08.003",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Controllable porous membrane actuator by gradient infiltration of conducting polymers",
+      "authors": [
+        "J. E. Yim",
+        "S. H. Lee",
+        "S. Jeong",
+        "K. A. I. Zhang",
+        "J. Byun"
+      ],
+      "journal": "Journal of Materials Chemistry A",
+      "volume": "9",
+      "issue": "8",
+      "pages": "5007-5015",
+      "year": 2021,
+      "date": "2021-01-01",
+      "doi": "https://doi.org/10.1039/d0ta12023e",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Hydrophilic photocatalytic membrane via grafting conjugated polyelectrolyte for visible-light-driven biofouling control",
+      "authors": [
+        "E. Jeong",
+        "J. Byun",
+        "B. Bayarkhuu",
+        "S. W. Hong"
+      ],
+      "journal": "Applied Catalysis B: Environmental",
+      "volume": "282",
+      "issue": null,
+      "pages": "119587",
+      "year": 2020,
+      "date": "2020-09-28",
+      "doi": "https://doi.org/10.1016/j.apcatb.2020.119587",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "N-Rich Carbon Catalysts with Economic Feasibility for the Selective Oxidation of Hydrogen Sulfide to Sulfur",
+      "authors": [
+        "C. Yang",
+        "H. Ye",
+        "J. Byun",
+        "Y. Hou",
+        "X. Wang"
+      ],
+      "journal": "Environmental Science & Technology",
+      "volume": "54",
+      "issue": "19",
+      "pages": "12621-12630",
+      "year": 2020,
+      "date": "2020-08-25",
+      "doi": "https://doi.org/10.1021/acs.est.0c02967",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Porous organic polymers for heterogeneous photocatalysis",
+      "authors": [
+        "J. Byun"
+      ],
+      "journal": "Polymer Science and Technology",
+      "volume": "31",
+      "issue": "3",
+      "pages": null,
+      "year": 2020,
+      "date": "2020-07",
+      "doi": null,
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Magnetic Conjugated Polymer Nanoparticles with Tunable Wettability for Versatile Photocatalysis under Visible Light",
+      "authors": [
+        "B. Bayarkhuu",
+        "C. Yang",
+        "W. Wang",
+        "K. A. I. Zhang",
+        "J. Byun"
+      ],
+      "journal": "ACS Materials Letters",
+      "volume": "2",
+      "issue": "5",
+      "pages": "557-562",
+      "year": 2020,
+      "date": "2020-04-17",
+      "doi": "https://doi.org/10.1021/acsmaterialslett.0c00065",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Quantitative evaluation of the antibacterial factors of ZnO nanorod arrays under dark conditions: Physical and chemical effects on Escherichia coli inactivation",
+      "authors": [
+        "E. Jeong",
+        "C. U. Kim",
+        "J. Byun",
+        "J. Lee",
+        "H.-E. Kim",
+        "E.-J. Kim",
+        "K. J. Choi",
+        "S. W. Hong"
+      ],
+      "journal": "The Science of The Total Environment",
+      "volume": "712",
+      "issue": null,
+      "pages": "136574",
+      "year": 2020,
+      "date": "2020-01-07",
+      "doi": "https://doi.org/10.1016/j.scitotenv.2020.136574",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Designing conjugated porous polymers for visible light-driven photocatalytic chemical transformations",
+      "authors": [
+        "J. Byun",
+        "K. A. I. Zhang"
+      ],
+      "journal": "Materials Horizons",
+      "volume": "7",
+      "issue": "1",
+      "pages": "15-31",
+      "year": 2019,
+      "date": "2019-09-11",
+      "doi": "https://doi.org/10.1039/c9mh01071h",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Processing nanoporous organic polymers in liquid amines",
+      "authors": [
+        "J. Byun",
+        "D. Thirion",
+        "C. T. Yavuz"
+      ],
+      "journal": "Beilstein Journal of Nanotechnology",
+      "volume": "10",
+      "issue": null,
+      "pages": "1844-1850",
+      "year": 2019,
+      "date": "2019-09-09",
+      "doi": "https://doi.org/10.3762/bjnano.10.179",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Conjugated Polymer Hydrogel Photocatalysts with Expandable Photoactive Sites in Water",
+      "authors": [
+        "J. Byun",
+        "K. Landfester",
+        "K. A. I. Zhang"
+      ],
+      "journal": "Chemistry of Materials",
+      "volume": "31",
+      "issue": "9",
+      "pages": "3381-3387",
+      "year": 2019,
+      "date": "2019-04-03",
+      "doi": "https://doi.org/10.1021/acs.chemmater.9b00544",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Molecular Design of Donor-Acceptor-Type Organic Photocatalysts for Metal-free Aromatic C-C Bond Formations under Visible Light",
+      "authors": [
+        "L. Wang",
+        "J. Byun",
+        "R. Li",
+        "W. Huang",
+        "K. A. I. Zhang"
+      ],
+      "journal": "Advanced Synthesis & Catalysis",
+      "volume": "360",
+      "issue": "22",
+      "pages": "4312-4318",
+      "year": 2018,
+      "date": "2018-08-31",
+      "doi": "https://doi.org/10.1002/adsc.201800950",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Controllable Homogeneity/Heterogeneity Switch of Imidazolium Ionic Liquids for CO2 Utilization",
+      "authors": [
+        "J. Byun",
+        "K. A. I. Zhang"
+      ],
+      "journal": "ChemCatChem",
+      "volume": "10",
+      "issue": "20",
+      "pages": "4610-4616",
+      "year": 2018,
+      "date": "2018-08-08",
+      "doi": "https://doi.org/10.1002/cctc.201801086",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Asymmetric Covalent Triazine Framework for Enhanced Visible-Light Photoredox Catalysis via Energy Transfer Cascade",
+      "authors": [
+        "W. Huang",
+        "J. Byun",
+        "I. Rörich",
+        "C. Ramanan",
+        "P. W. M. Blom",
+        "H. Lü",
+        "D. Wang",
+        "L. C. da Silva",
+        "R. Li",
+        "L. Wang",
+        "K. Landfester",
+        "K. A. I. Zhang"
+      ],
+      "journal": "Angewandte Chemie International Edition",
+      "volume": "57",
+      "issue": "27",
+      "pages": "8316-8320",
+      "year": 2018,
+      "date": "2018-05-02",
+      "doi": "https://doi.org/10.1002/anie.201801112",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Poly(benzothiadiazoles) and Their Derivatives as Heterogeneous Photocatalysts for Visible-Light-Driven Chemical Transformations",
+      "authors": [
+        "R. Li",
+        "J. Byun",
+        "W. Huang",
+        "C. Ayed",
+        "L. Wang",
+        "K. A. I. Zhang"
+      ],
+      "journal": "ACS Catalysis",
+      "volume": "8",
+      "issue": "6",
+      "pages": "4735-4750",
+      "year": 2018,
+      "date": "2018-04-20",
+      "doi": "https://doi.org/10.1021/acscatal.8b00407",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Highly Efficient Catalytic Cyclic Carbonate Formation by Pyridyl Salicylimines",
+      "authors": [
+        "S. Subramanian",
+        "J. Park",
+        "J. Byun",
+        "Y. Jung",
+        "C. T. Yavuz"
+      ],
+      "journal": "ACS Applied Materials & Interfaces",
+      "volume": "10",
+      "issue": "11",
+      "pages": "9478-9484",
+      "year": 2018,
+      "date": "2018-02-26",
+      "doi": "https://doi.org/10.1021/acsami.8b00485",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "CO2-Triggered Switchable Hydrophilicity of a Heterogeneous Conjugated Polymer Photocatalyst for Enhanced Catalytic Activity in Water",
+      "authors": [
+        "J. Byun",
+        "W. Huang",
+        "D. Wang",
+        "R. Li",
+        "K. A. I. Zhang"
+      ],
+      "journal": "Angewandte Chemie International Edition",
+      "volume": "57",
+      "issue": "11",
+      "pages": "2967-2971",
+      "year": 2018,
+      "date": "2018-01-17",
+      "doi": "https://doi.org/10.1002/anie.201711773",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Reversible water capture by a charged metal-free porous polymer",
+      "authors": [
+        "J. Byun",
+        "H. A. Patel",
+        "D. Thirion",
+        "C. T. Yavuz"
+      ],
+      "journal": "Polymer",
+      "volume": "126",
+      "issue": null,
+      "pages": "308-313",
+      "year": 2017,
+      "date": "2017-06-02",
+      "doi": "https://doi.org/10.1016/j.polymer.2017.05.071",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Carbon Dioxide Capture Adsorbents: Chemistry and Methods",
+      "authors": [
+        "H. A. Patel",
+        "J. Byun",
+        "C. T. Yavuz"
+      ],
+      "journal": "ChemSusChem",
+      "volume": "10",
+      "issue": "7",
+      "pages": "1303-1317",
+      "year": 2016,
+      "date": "2016-12-21",
+      "doi": "https://doi.org/10.1002/cssc.201601545",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Charge-specific size-dependent separation of water-soluble organic molecules by fluorinated nanoporous networks",
+      "authors": [
+        "J. Byun",
+        "H. A. Patel",
+        "D. Thirion",
+        "C. T. Yavuz"
+      ],
+      "journal": "Nature Communications",
+      "volume": "7",
+      "issue": "1",
+      "pages": "13377",
+      "year": 2016,
+      "date": "2016-11-10",
+      "doi": "https://doi.org/10.1038/ncomms13377",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Engineered Nanoparticles for Water Treatment Application",
+      "authors": [
+        "J. Byun",
+        "C. T. Yavuz"
+      ],
+      "journal": "Engineered Nanoparticles and the Environment: Biophysicochemical Processes and Toxicity (Wiley)",
+      "volume": null,
+      "issue": null,
+      "pages": "20-30",
+      "year": 2016,
+      "date": "2016-09-13",
+      "doi": "https://doi.org/10.1002/9781119275855.ch2",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Synthesis and Easy Functionalization of Highly Porous Networks through Exchangeable Fluorines for Target Specific Applications",
+      "authors": [
+        "D. Thirion",
+        "Y. Kwon",
+        "V. Rozyyev",
+        "J. Byun",
+        "C. T. Yavuz"
+      ],
+      "journal": "Chemistry of Materials",
+      "volume": "28",
+      "issue": "16",
+      "pages": "5592-5595",
+      "year": 2016,
+      "date": "2016-07-31",
+      "doi": "https://doi.org/10.1021/acs.chemmater.6b02152",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Rapid extraction of uranium ions from seawater using novel porous polymeric adsorbents",
+      "authors": [
+        "Y. Sihn",
+        "J. Byun",
+        "H. A. Patel",
+        "W. Lee",
+        "C. T. Yavuz"
+      ],
+      "journal": "RSC Advances",
+      "volume": "6",
+      "issue": "51",
+      "pages": "45968-45976",
+      "year": 2016,
+      "date": "2016-01-01",
+      "doi": "https://doi.org/10.1039/c6ra06807c",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Observation of the wrapping mechanism in amine carbon dioxide molecular interactions on heterogeneous sorbents",
+      "authors": [
+        "D. Thirion",
+        "V. Rozyyev",
+        "J. Park",
+        "J. Byun",
+        "Y. Jung",
+        "M. Atilhan",
+        "C. T. Yavuz"
+      ],
+      "journal": "Physical Chemistry Chemical Physics",
+      "volume": "18",
+      "issue": "21",
+      "pages": "14177-14181",
+      "year": 2016,
+      "date": "2016-01-01",
+      "doi": "https://doi.org/10.1039/c6cp01382a",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Nanoporous networks as effective stabilisation matrices for nanoscale zero-valent iron and groundwater pollutant removal",
+      "authors": [
+        "P. D. Mines",
+        "J. Byun",
+        "Y. Hwang",
+        "H. A. Patel",
+        "H. R. Andersen",
+        "C. T. Yavuz"
+      ],
+      "journal": "Journal of Materials Chemistry A",
+      "volume": "4",
+      "issue": "2",
+      "pages": "632-639",
+      "year": 2015,
+      "date": "2015-11-27",
+      "doi": "https://doi.org/10.1039/c5ta05025a",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Nanoporous networks as caging supports for uniform, surfactant-free Co 3 O 4 nanocrystals and their applications in energy storage and conversion",
+      "authors": [
+        "J. Byun",
+        "H. A. Patel",
+        "D. J. Kim",
+        "C. H. Jung",
+        "J. Y. Park",
+        "J. W. Choi",
+        "C. T. Yavuz"
+      ],
+      "journal": "Journal of Materials Chemistry A",
+      "volume": "3",
+      "issue": "30",
+      "pages": "15489-15497",
+      "year": 2015,
+      "date": "2015-01-01",
+      "doi": "https://doi.org/10.1039/c5ta02825f",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Magnetic BaFe12O19 nanofiber filter for effective separation of Fe3O4 nanoparticles and removal of arsenic",
+      "authors": [
+        "J. Byun",
+        "H. A. Patel",
+        "C. T. Yavuz"
+      ],
+      "journal": "Journal of Nanoparticle Research",
+      "volume": "16",
+      "issue": "12",
+      "pages": null,
+      "year": 2014,
+      "date": "2014-12-01",
+      "doi": "https://doi.org/10.1007/s11051-014-2787-2",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Nanoporous covalent organic polymers incorporating Tröger's base functionalities for enhanced CO 2 capture",
+      "authors": [
+        "J. Byun",
+        "S. H. Je",
+        "H. A. Patel",
+        "A. Coşkun",
+        "C. T. Yavuz"
+      ],
+      "journal": "Journal of Materials Chemistry A",
+      "volume": "2",
+      "issue": "31",
+      "pages": "12507",
+      "year": 2014,
+      "date": "2014-04-30",
+      "doi": "https://doi.org/10.1039/c4ta00698d",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Highly Stable Nanoporous Sulfur-Bridged Covalent Organic Polymers for Carbon Dioxide Removal",
+      "authors": [
+        "H. A. Patel",
+        "F. Karadaş",
+        "J. Byun",
+        "J. Park",
+        "E. Deniz",
+        "A. Canlier",
+        "Y. Jung",
+        "M. Atilhan",
+        "C. T. Yavuz"
+      ],
+      "journal": "Advanced Functional Materials",
+      "volume": "23",
+      "issue": "18",
+      "pages": "2270-2276",
+      "year": 2012,
+      "date": "2012-12-17",
+      "doi": "https://doi.org/10.1002/adfm.201202442",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Arsenic removal by magnetic nanocrystalline barium hexaferrite",
+      "authors": [
+        "H. A. Patel",
+        "J. Byun",
+        "C. T. Yavuz"
+      ],
+      "journal": "Journal of Nanoparticle Research",
+      "volume": "14",
+      "issue": "7",
+      "pages": null,
+      "year": 2012,
+      "date": "2012-06-27",
+      "doi": "https://doi.org/10.1007/s11051-012-0881-x",
+      "url": null,
+      "covers": []
+    }
+  ]
+}
