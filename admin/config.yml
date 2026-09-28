@@ -15,11 +15,11 @@ backend:
 site_url: https://07jhbyun.github.io/byunlab/
 display_url: https://07jhbyun.github.io/byunlab/
 
-# Default upload folder; each image field below overrides it.
-# media_folder is relative to the repository root; public_folder is what gets stored in JSON
-# (no leading slash, because the site is served from /byunlab/).
+# Upload folders are set per file below (team, news, covers).
+# Sveltia requires a leading slash in public_folder, so stored paths look like
+# "/assets/img/news/x.webp"; the site scripts drop that slash because the site is served from /byunlab/.
 media_folder: /assets/img
-public_folder: assets/img
+public_folder: /assets/img
 
 media_libraries:
   default:
@@ -42,6 +42,8 @@ collections:
       - name: team
         label: Team
         file: data/team.json
+        media_folder: /assets/img/team
+        public_folder: /assets/img/team
         fields:
           - name: pi
             label: Principal Investigator
@@ -51,8 +53,6 @@ collections:
               - name: photo
                 label: Photo
                 widget: image
-                media_folder: /assets/img/team
-                public_folder: assets/img/team
               - name: career
                 label: Career
                 widget: list
@@ -85,8 +85,6 @@ collections:
                 label: Photo (current members)
                 widget: image
                 required: false
-                media_folder: /assets/img/team
-                public_folder: assets/img/team
               - { name: focus, label: Research focus, widget: string, required: false }
               - { name: affiliation, label: Affiliation and period (current members), widget: string, required: false, hint: "e.g. Seoul National University, 2024.03~present" }
               - { name: period, label: Period (alumni), widget: string, required: false, hint: "e.g. 2022.09~2026.03" }
@@ -101,14 +99,14 @@ collections:
               - name: image
                 label: Image
                 widget: image
-                media_folder: /assets/img/team
-                public_folder: assets/img/team
               - { name: alt, label: Description, widget: string }
 
       # ---------------------------------------------------------------- News
       - name: news
         label: News
         file: data/news.json
+        media_folder: /assets/img/news
+        public_folder: /assets/img/news
         fields:
           - name: items
             label: News
@@ -133,8 +131,6 @@ collections:
                 label: Photo (optional)
                 widget: image
                 required: false
-                media_folder: /assets/img/news
-                public_folder: assets/img/news
 
       # ---------------------------------------------------------------- Research
       - name: research
@@ -163,6 +159,8 @@ collections:
       - name: covers
         label: Journal covers
         file: data/covers.json
+        media_folder: /assets/img/covers
+        public_folder: /assets/img/covers
         fields:
           - { name: rotate_seconds, label: Seconds per cover, widget: number, value_type: int, min: 2, max: 10, default: 3 }
           - name: items
@@ -175,8 +173,6 @@ collections:
               - name: image
                 label: Cover image
                 widget: image
-                media_folder: /assets/img/covers
-                public_folder: assets/img/covers
               - { name: journal, label: Journal, widget: string }
               - { name: year, label: Year, widget: number, value_type: int }
               - name: label

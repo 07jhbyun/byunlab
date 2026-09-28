@@ -202,14 +202,14 @@ Home, The Team, Research, Publications, News 5개. Lab tour 페이지는 만들�
 9. **Sveltia CMS**: `/admin`에서 브라우저로 콘텐츠 수정
    - 백엔드 GitHub, 로그인은 fine-grained PAT(Sign In with Token)만 사용. 인증 서버 없음
    - 편집 대상: `data/team.json`, `data/news.json`, `data/research.json`, `data/covers.json`. `publications.json`, `last_checked.txt`, `config.json`, `manual_pubs.json`은 제외
-   - 이미지 업로드: `assets/img/team/`, `assets/img/news/`, `assets/img/covers/`. 전역 제한 5MB, WebP 변환 최대 1000px
+   - 이미지 업로드: `assets/img/team/`, `assets/img/news/`, `assets/img/covers/` (파일 단위 `media_folder`로 지정. 목록 안 이미지 필드의 필드 단위 지정은 적용되지 않음). 전역 제한 5MB, WebP 변환 최대 1000px
    - 저장 시 `main`에 직접 커밋 (`cms: update ...`). 워크플로는 push 전에 `git pull --rebase`로 CMS 커밋과 충돌을 피함
 
 각 단계 완료 시 결과를 요약 보고하고, 다음 단계 진행 전 사용자 확인을 받을 것.
 
 ## 10. 작업 규칙
 
-- 콘텐츠(Team, News, Research 대표 논문, 표지)는 HTML에 직접 쓰지 않고 `data/*.json`에서 렌더링. 이미지 경로는 사이트 기준 상대 경로(`assets/img/...`, 앞에 `/` 없음)
+- 콘텐츠(Team, News, Research 대표 논문, 표지)는 HTML에 직접 쓰지 않고 `data/*.json`에서 렌더링. 이미지 경로는 사이트 기준 상대 경로(`assets/img/...`). CMS는 앞에 `/`를 붙여 저장하므로(`public_folder`에 `/` 필수) 렌더링 스크립트가 앞의 `/`를 제거함
 - 로컬 작업 전 항상 `git pull` (CMS와 워크플로가 `main`에 커밋함)
 - 사용자 확인 없이 파일을 대량 생성하거나 외부 이미지를 다운로드하지 않음
 - 응답과 사이트 문구에 em-dash(—)를 사용하지 않음
