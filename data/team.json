@@ -1,0 +1,314 @@
+{
+  "pi": {
+    "name": "Dr. Jeehye Byun",
+    "photo": "assets/img/team/byun.jpg",
+    "career": [
+      {
+        "title": "Principal Research Scientist",
+        "period": "2026.03~present",
+        "details": "Water Cycle Research Center, Korea Institute of Science and Technology (KIST)"
+      },
+      {
+        "title": "Associate Professor",
+        "period": "2023.03~present",
+        "details": "Division of Energy & Environment Technology, University of Science and Technology, KIST-School"
+      },
+      {
+        "title": "Assistant Professor",
+        "period": "2020.03~2023.02",
+        "details": "Division of Energy & Environment Technology, University of Science and Technology, KIST-School"
+      },
+      {
+        "title": "Senior Research Scientist",
+        "period": "2018.12~2026.02",
+        "details": "Water Cycle Research Center, Korea Institute of Science and Technology (KIST)"
+      },
+      {
+        "title": "Postdoctoral Fellow",
+        "period": "2016.12~2018.11",
+        "details": "Physical Chemistry of Polymers, Max Planck Institute for Polymer Research, under the supervision of [Dr. Kai A. I. Zhang](http://zhanggroup.de/) and [Prof. Dr. Katharina Landfester](https://www.mpip-mainz.mpg.de/en/landfester)\nAlexander von Humboldt fellow"
+      },
+      {
+        "title": "Ph.D.",
+        "period": "2013.02~2016.08",
+        "details": "Graduate School of EEWS (Energy, Environment, Water and Sustainability), Korea Advanced Institute of Science and Technology (KAIST), under the supervision of [Prof. Cafer T. Yavuz](https://onelab.kaust.edu.sa/team/professor-cafer)"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Dr. Soochan Lee",
+      "status": "current",
+      "position": "Postdoc",
+      "photo": "assets/img/team/s-lee.jpg",
+      "focus": "MOF catalysis, Energy membrane",
+      "affiliation": "",
+      "period": "",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Dr. Juri Lee",
+      "status": "current",
+      "position": "Postdoc",
+      "photo": "assets/img/team/juri.jpg",
+      "focus": "Reactive membranes",
+      "affiliation": "2026.03~present",
+      "period": "",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Jueun Park",
+      "status": "current",
+      "position": "MS-Ph.D. student",
+      "photo": "assets/img/team/park.jpg",
+      "focus": "Energy membrane",
+      "affiliation": "Seoul National University, 2023.09~present",
+      "period": "",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Nahyeon Jeong",
+      "status": "current",
+      "position": "Ph.D. student",
+      "photo": "assets/img/team/jeong.jpg",
+      "focus": "LIB recycling + AI (co-advised w/ Dr. S. Moon)",
+      "affiliation": "Seoul National University, 2024.03~present",
+      "period": "",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Hyerin Song",
+      "status": "current",
+      "position": "Ph.D. student",
+      "photo": "assets/img/team/song.jpg",
+      "focus": "Resource recovery",
+      "affiliation": "UST-KIST School, 2025.03~present",
+      "period": "",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Jeongho Lee",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2026.07~2026.08",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Jihyun Kim",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2026.01~2026.06",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Chanwook Yoon",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2026.01~2026.06",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Dr. Hyekyung Cho",
+      "status": "alumni",
+      "position": "Postdoc",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2022.09~2026.03",
+      "graduation_year": null,
+      "now": "Currently at ADD"
+    },
+    {
+      "name": "Dr. Joohyun Kim",
+      "status": "alumni",
+      "position": "Postdoc",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2025.03~2025.07",
+      "graduation_year": null,
+      "now": "Currently at Samsung Research"
+    },
+    {
+      "name": "Bolormaa Bayarkhuu",
+      "status": "alumni",
+      "position": "Ph.D. student",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2019.03~2025.02",
+      "graduation_year": null,
+      "now": "Currently at MPIP Mainz, Postdoc"
+    },
+    {
+      "name": "Dr. Sunil Kumar",
+      "status": "alumni",
+      "position": "Postdoc",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2022.05~2024.12",
+      "graduation_year": null,
+      "now": "Currently at Gangneung-Wonju National University, Postdoc"
+    },
+    {
+      "name": "Solhee Kim",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2023.04~2024.08",
+      "graduation_year": null,
+      "now": "Currently at Hansol Chemical"
+    },
+    {
+      "name": "Seokgu Lee",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2024.06~2024.08",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Yeongjin Son",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2024.06~2024.08",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Hyomin Cho",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2023.12~2024.02",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Hyorin Ahn",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2023.03~2023.07",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Yejin Han",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2021.09~2022.02",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Hyejeong Lee",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2021.09~2022.02",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Dr. Yeongran Hong",
+      "status": "alumni",
+      "position": "Postdoc",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2021.05~2021.12",
+      "graduation_year": null,
+      "now": "Currently at LG Display R&D center"
+    },
+    {
+      "name": "Subin Kwon",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2021.03~2021.08",
+      "graduation_year": null,
+      "now": ""
+    },
+    {
+      "name": "Seung Heon Lee",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2020.08~2021.04",
+      "graduation_year": null,
+      "now": "Currently at University of Texas at Austin for Ph.D. program"
+    },
+    {
+      "name": "Ju Eun Yim",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2019.09~2020.08",
+      "graduation_year": null,
+      "now": "Currently at Texas A&M University for Ph.D. program"
+    },
+    {
+      "name": "Kyungmin Kim",
+      "status": "alumni",
+      "position": "Intern",
+      "photo": "",
+      "focus": "",
+      "affiliation": "",
+      "period": "2020.03~2020.08",
+      "graduation_year": null,
+      "now": ""
+    }
+  ],
+  "group_photos": [
+    {
+      "image": "assets/img/team/group-1.jpg",
+      "alt": "The Byun Lab group photo"
+    },
+    {
+      "image": "assets/img/team/group-2.jpg",
+      "alt": "The Byun Lab group photo outdoors"
+    }
+  ]
+}

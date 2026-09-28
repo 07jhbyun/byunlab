@@ -1,0 +1,22 @@
+{
+  "topics": [
+    {
+      "id": "energy",
+      "name": "Energy: conjugated polymers for visible-light-driven photocatalysis",
+      "papers": [
+        "10.1016/j.joule.2026.102603",
+        "10.1002/adfm.202411661",
+        "10.1039/d2ee02504c"
+      ]
+    },
+    {
+      "id": "env",
+      "name": "Environment: porous polymers for environmental applications",
+      "papers": [
+        "10.1002/anie.202304378",
+        "10.1002/anie.201711773",
+        "10.1038/ncomms13377"
+      ]
+    }
+  ]
+}

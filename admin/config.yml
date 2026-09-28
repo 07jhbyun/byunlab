@@ -1,0 +1,187 @@
+# Sveltia CMS configuration for THE BYUN LAB
+# Edits data/team.json, data/news.json, data/research.json and data/covers.json only.
+# publications.json (auto-generated), last_checked.txt, config.json and manual_pubs.json are not editable here.
+
+backend:
+  name: github
+  repo: 07jhbyun/byunlab
+  branch: main
+  auth_methods: [token]          # Sign In with Token (fine-grained PAT); no auth server
+  commit_messages:
+    update: "cms: update {{slug}}"
+    uploadMedia: "cms: upload {{path}}"
+    deleteMedia: "cms: delete {{path}}"
+
+site_url: https://07jhbyun.github.io/byunlab/
+display_url: https://07jhbyun.github.io/byunlab/
+
+# Default upload folder; each image field below overrides it.
+# media_folder is relative to the repository root; public_folder is what gets stored in JSON
+# (no leading slash, because the site is served from /byunlab/).
+media_folder: /assets/img
+public_folder: assets/img
+
+media_libraries:
+  default:
+    config:
+      max_file_size: 5242880     # 5 MB per upload
+      slugify_filename: true
+      transformations:
+        raster_image:            # converted before upload
+          format: webp
+          quality: 82
+          width: 1000
+          height: 1000
+
+collections:
+  - name: site
+    label: Site content
+    delete: false
+    files:
+      # ---------------------------------------------------------------- Team
+      - name: team
+        label: Team
+        file: data/team.json
+        fields:
+          - name: pi
+            label: Principal Investigator
+            widget: object
+            fields:
+              - { name: name, label: Name, widget: string }
+              - name: photo
+                label: Photo
+                widget: image
+                media_folder: /assets/img/team
+                public_folder: assets/img/team
+              - name: career
+                label: Career
+                widget: list
+                summary: "{{title}} ({{period}})"
+                fields:
+                  - { name: title, label: Position, widget: string }
+                  - { name: period, label: Period, widget: string, hint: "e.g. 2026.03~present" }
+                  - name: details
+                    label: Details
+                    widget: text
+                    hint: "Links: [label](https://...). Line breaks are kept."
+          - name: people
+            label: Members and alumni
+            label_singular: person
+            widget: list
+            summary: "{{name}} ({{status}}, {{position}})"
+            hint: "Set Status to alumni to move a person to the Alumni section. Order in this list is the display order."
+            fields:
+              - { name: name, label: Name, widget: string }
+              - name: status
+                label: Status
+                widget: select
+                options: [current, alumni]
+                default: current
+              - name: position
+                label: Position
+                widget: select
+                options: [Postdoc, Ph.D. student, MS-Ph.D. student, MS student, Researcher, Intern]
+              - name: photo
+                label: Photo (current members)
+                widget: image
+                required: false
+                media_folder: /assets/img/team
+                public_folder: assets/img/team
+              - { name: focus, label: Research focus, widget: string, required: false }
+              - { name: affiliation, label: Affiliation and period (current members), widget: string, required: false, hint: "e.g. Seoul National University, 2024.03~present" }
+              - { name: period, label: Period (alumni), widget: string, required: false, hint: "e.g. 2022.09~2026.03" }
+              - { name: graduation_year, label: Graduation year, widget: number, value_type: int, required: false, hint: "Shown for alumni when Period is empty" }
+              - { name: now, label: Current position (alumni), widget: string, required: false, hint: "e.g. Currently at ADD" }
+          - name: group_photos
+            label: Group photos
+            label_singular: group photo
+            widget: list
+            summary: "{{alt}}"
+            fields:
+              - name: image
+                label: Image
+                widget: image
+                media_folder: /assets/img/team
+                public_folder: assets/img/team
+              - { name: alt, label: Description, widget: string }
+
+      # ---------------------------------------------------------------- News
+      - name: news
+        label: News
+        file: data/news.json
+        fields:
+          - name: items
+            label: News
+            label_singular: news item
+            widget: list
+            add_to_top: true
+            summary: "{{date}} {{text}}"
+            hint: "Shown newest first by date, regardless of the order here."
+            fields:
+              - { name: date, label: Date, widget: datetime, type: date }
+              - { name: date_label, label: Date shown (optional), widget: string, required: false, hint: "Only to override, e.g. 'Feb 2026' to hide the day" }
+              - name: text
+                label: Text
+                widget: text
+                hint: "Links: [label](https://...). Line breaks are kept."
+              - name: home_text
+                label: Short text for Home (optional)
+                widget: string
+                required: false
+                hint: "Shown in Home > Recent News. If empty, the text above is cut to 2 lines."
+              - name: image
+                label: Photo (optional)
+                widget: image
+                required: false
+                media_folder: /assets/img/news
+                public_folder: assets/img/news
+
+      # ---------------------------------------------------------------- Research
+      - name: research
+        label: Research (representative papers)
+        file: data/research.json
+        fields:
+          - name: topics
+            label: Topics
+            widget: list
+            allow_add: false
+            allow_remove: false
+            allow_reorder: false
+            summary: "{{name}}"
+            fields:
+              - { name: id, label: Topic, widget: select, options: [energy, env] }
+              - { name: name, label: Name, widget: string }
+              - name: papers
+                label: Representative paper DOIs
+                widget: list
+                min: 1
+                max: 5
+                hint: "e.g. 10.1016/j.joule.2026.102603. Only papers in the Publications list are shown; the newest appears on the research map."
+                field: { name: doi, label: DOI, widget: string }
+
+      # ---------------------------------------------------------------- Covers
+      - name: covers
+        label: Journal covers
+        file: data/covers.json
+        fields:
+          - { name: rotate_seconds, label: Seconds per cover, widget: number, value_type: int, min: 2, max: 10, default: 3 }
+          - name: items
+            label: Covers
+            label_singular: cover
+            widget: list
+            add_to_top: true
+            summary: "{{journal}} {{year}}"
+            fields:
+              - name: image
+                label: Cover image
+                widget: image
+                media_folder: /assets/img/covers
+                public_folder: assets/img/covers
+              - { name: journal, label: Journal, widget: string }
+              - { name: year, label: Year, widget: number, value_type: int }
+              - name: label
+                label: Cover type
+                widget: select
+                options: [Front Cover, Inside Front Cover, Inside Cover, Back Cover, Cover Picture, Cover Feature, Cover]
+              - { name: paper_doi, label: Paper DOI link, widget: string, hint: "e.g. https://doi.org/10.1002/..." }
+              - { name: cover_url, label: Cover link (optional), widget: string, required: false, hint: "If empty, clicking opens the paper DOI" }

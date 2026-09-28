@@ -4,6 +4,7 @@
 
   const DATA_URL = 'data/publications.json';
   const CONFIG_URL = 'data/config.json';
+  const RESEARCH_URL = 'data/research.json';
 
   // ---- Helpers ----------------------------------------------------------------
   const bareDoi = d => (d || '').toLowerCase().replace('https://doi.org/', '');
@@ -89,30 +90,33 @@
   const RESEARCH_MAP = {
     materials: {
       title: 'Materials: polymer design',
-      text: 'We design and make novel polymeric materials to find sustainable solutions for tackling the urgent problems of water pollution and energy shortage.',
-      doi: null
+      text: 'We design and make novel polymeric materials to find sustainable solutions for tackling the urgent problems of water pollution and energy shortage.'
     },
     energy: {
       title: 'Energy: conjugated polymers for visible-light-driven photocatalysis',
-      text: 'Polymeric photocatalysts with tunable band structures and wetting properties for water splitting, oxygen reduction, nitrogen fixation and antibacterial treatment.',
-      doi: '10.1016/j.joule.2026.102603'
+      text: 'Polymeric photocatalysts with tunable band structures and wetting properties for water splitting, oxygen reduction, nitrogen fixation and antibacterial treatment.'
     },
     env: {
       title: 'Environment: porous polymers for environmental applications',
-      text: "Porous polymers designed by 'porosity' and 'chemistry' rules for selective adsorption of CO2, micropollutants in water, and organic vapors.",
-      doi: '10.1002/anie.202304378'
+      text: "Porous polymers designed by 'porosity' and 'chemistry' rules for selective adsorption of CO2, micropollutants in water, and organic vapors."
     }
   };
 
-  function initResearch(items) {
+  function initResearch(items, research) {
     const tip = document.getElementById('tip');
     if (!tip) return;
     const find = doi => items.find(p => bareDoi(p.doi) === bareDoi(doi));
     const groups = document.querySelectorAll('.tree svg > g[data-key]');
 
+    // Representative papers per topic id, newest first; the newest is shown on the map.
+    const papers = {};
+    ((research && research.topics) || []).forEach(t => {
+      papers[t.id] = (t.papers || []).map(find).filter(Boolean).sort(byDateDesc);
+    });
+
     function show(key) {
       const m = RESEARCH_MAP[key];
-      const p = m.doi && find(m.doi);
+      const p = (papers[key] || [])[0];
       tip.className = 'tip ' + key;
       tip.innerHTML = `<h3>${esc(m.title)}</h3><p>${esc(m.text)}</p>` + (p
         ? `<div class="rep">Representative: <a href="${esc(p.doi)}" target="_blank" rel="noopener">${chem(p.title)}</a>, <em>${esc(p.journal)}</em> (${p.year})</div>`
@@ -133,8 +137,8 @@
     });
     show('materials');
 
-    document.querySelectorAll('.papers[data-dois]').forEach(box => {
-      const cards = box.dataset.dois.split(',').map(find).filter(Boolean).sort(byDateDesc).map(p => `
+    document.querySelectorAll('.papers[data-topic]').forEach(box => {
+      const cards = (papers[box.dataset.topic] || []).map(p => `
         <article class="paper"><span class="yr">${p.year}</span><div>
           <a class="title" href="${esc(link(p))}" target="_blank" rel="noopener">${chem(p.title)}</a>
           <div class="meta">${esc(shortAuthors(p.authors))}, <em>${esc(p.journal)}</em>${coverBadges(p)}</div>
@@ -150,16 +154,21 @@
   const getJson = (url, options) => fetch(url, options).then(r => { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); });
 
   // publications.json changes weekly; revalidate with the server so a stale cached list is never shown.
-  Promise.all([getJson(DATA_URL, { cache: 'no-cache' }), getJson(CONFIG_URL).catch(() => ({}))])
-    .then(([data, config]) => {
+  // research.json is edited in the CMS, so it is revalidated as well.
+  const research = document.getElementById('tip')
+    ? getJson(RESEARCH_URL, { cache: 'no-cache' }).catch(() => ({}))
+    : Promise.resolve({});
+
+  Promise.all([getJson(DATA_URL, { cache: 'no-cache' }), getJson(CONFIG_URL).catch(() => ({})), research])
+    .then(([data, config, researchData]) => {
       const items = (data.items || []).slice().sort(byDateDesc);
       const highlight = new Set((config.highlight_names || []).map(nameKey));
-      initResearch(items);
+      initResearch(items, researchData);
       renderPublicationList(data, items, highlight);
       renderRecent(items, highlight);
     })
     .catch(() => {
-      initResearch([]);
+      initResearch([], {});
       const box = document.getElementById('pub-list');
       if (box) {
         box.innerHTML = '<p class="muted">The publication list could not be loaded. Please see the ' +

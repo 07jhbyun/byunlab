@@ -17,6 +17,8 @@
     });
   }
   renderEmails();
+  // Content rendered later from JSON (team.json) calls this again.
+  window.BYUNLAB = { renderEmails };
 
   // ---- Mobile navigation ---------------------------------------------------
   const toggle = document.querySelector('.nav-toggle');
@@ -132,7 +134,7 @@
   // One cover at a time with a cross-fade. Autoplay pauses on hover/focus and is off
   // with prefers-reduced-motion; dots, arrow keys and swipe always work.
   function initCovers(box) {
-    fetch('data/covers.json')
+    fetch('data/covers.json', { cache: 'no-cache' })
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => {
         const items = (data.items || []).filter(c => c.image);
@@ -149,7 +151,7 @@
           a.rel = 'noopener';
           a.title = label(c);
           const img = document.createElement('img');
-          img.src = c.image;
+          img.src = String(c.image).replace(/^\/+/, ''); // site-relative path
           img.alt = label(c);
           img.width = 400;
           img.height = 530;

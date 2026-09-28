@@ -7,3 +7,8 @@ Thumbs.db
 
 # Original cover images (only optimized WebP in assets/img/covers/ is committed)
 assets/img/cover/
+
+# Local secrets (never commit)
+*토큰*.txt
+*token*.txt
+*.token

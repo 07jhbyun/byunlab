@@ -252,6 +252,7 @@ main > .section:nth-of-type(even) { background: var(--soft); }
    -------------------------------------------------------------------------- */
 .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
 .news-grid.home { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 20px; }
+.news-card p.clamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
 @media (max-width: 860px) { .news-grid.home { grid-template-columns: 1fr; } }
 .news-card { padding: 12px; display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: start; }
 .news-card .thumb { width: 96px; aspect-ratio: 1 / 1; border-radius: 8px; overflow: hidden; background: var(--soft); }
