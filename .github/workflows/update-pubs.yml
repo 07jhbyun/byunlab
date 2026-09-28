@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - name: Check out repository
@@ -34,14 +34,38 @@ jobs:
           OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
         run: python scripts/fetch_pubs.py
 
+      # GitHub disables scheduled workflows after 60 days without repository activity.
+      # Record the check date at most once per calendar month to keep the schedule alive.
+      - name: Update monthly keepalive stamp
+        run: |
+          today="$(date -u +%Y-%m-%d)"
+          stamp=data/last_checked.txt
+          if [ ! -f "$stamp" ] || [ "$(cut -c1-7 "$stamp")" != "${today:0:7}" ]; then
+            echo "$today" > "$stamp"
+            echo "Keepalive stamp updated: $today"
+          else
+            echo "Keepalive stamp already set this month: $(cat "$stamp")"
+          fi
+
       - name: Commit and push if changed
         run: |
+          today="$(date -u +%Y-%m-%d)"
           if git diff --quiet -- data/publications.json; then
-            echo "No changes in data/publications.json"
+            pubs_changed=false
+          else
+            pubs_changed=true
+          fi
+          git add data/publications.json data/last_checked.txt
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
             exit 0
+          fi
+          if [ "$pubs_changed" = true ]; then
+            message="chore: update publications ($today)"
+          else
+            message="chore: update last checked date ($today)"
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/publications.json
-          git commit -m "chore: update publications ($(date -u +%Y-%m-%d))"
+          git commit -m "$message"
           git push

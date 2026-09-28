@@ -33,7 +33,8 @@
 ├── data/
 │   ├── publications.json   # 자동 생성. 수동 편집 금지
 │   ├── config.json         # OpenAlex 저자 ID, 이름 표기, 제외 DOI
-│   └── manual_pubs.json    # OpenAlex에 없는 항목만 수동 추가 (선택)
+│   ├── manual_pubs.json    # OpenAlex에 없는 항목만 수동 추가 (선택)
+│   └── last_checked.txt    # 워크플로 월 1회 확인 날짜 (60일 비활성화 방지)
 ├── scripts/
 │   └── fetch_pubs.py
 └── .github/workflows/
@@ -168,7 +169,9 @@ Home, The Team, Research, Publications, News 5개. Lab tour 페이지는 만들�
 ## 8. GitHub Actions (.github/workflows/update-pubs.yml)
 
 - 트리거: 매주 월요일 00:00 UTC (`cron: "0 0 * * 1"`) + `workflow_dispatch` (수동 실행)
-- 단계: checkout → Python 설정 → `pip install requests` → `python scripts/fetch_pubs.py` → 변경 있으면 커밋 및 push
+- runner: `ubuntu-24.04` 고정 (ubuntu-latest 변경 영향 방지)
+- 단계: checkout → Python 설정 → `pip install requests` → `python scripts/fetch_pubs.py` → 월 1회 keepalive 기록 → 변경 있으면 커밋 및 push
+- keepalive: GitHub는 저장소 활동이 60일 없으면 schedule 워크플로를 비활성화함. `data/last_checked.txt`의 연월이 현재와 다르면 날짜를 기록해 월 최대 1회 커밋 (`chore: update last checked date (YYYY-MM-DD)`)
 - 커밋 메시지: `chore: update publications (YYYY-MM-DD)`
 - 권한: `contents: write`
 - 기본은 main 직접 반영. 원치 않는 항목이 들어오면 `config.json`의 `exclude_dois`에 추가하여 제외
