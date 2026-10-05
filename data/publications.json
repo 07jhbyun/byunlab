@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "count": 54,
   "items": [
     {
@@ -76,9 +76,9 @@
         "C. T. J. Ferguson"
       ],
       "journal": "RSC Applied Polymers",
-      "volume": null,
-      "issue": null,
-      "pages": null,
+      "volume": "4",
+      "issue": "5",
+      "pages": "1793-1800",
       "year": 2026,
       "date": "2026-01-01",
       "doi": "https://doi.org/10.1039/d5lp00363f",
@@ -298,7 +298,7 @@
         "B.-S. Kim",
         "H. Cho",
         "Y. Jeon",
-        "S.-H. Chun",
+        "S. Chun",
         "B. Bayarkhuu",
         "J. Byun",
         "H. Lee"
@@ -318,7 +318,7 @@
       "authors": [
         "S. Kumar",
         "B. Bayarkhuu",
-        "H. G. Ahn",
+        "H. Ahn",
         "H. Cho",
         "J. Byun"
       ],
