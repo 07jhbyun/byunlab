@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-05",
-  "count": 54,
+  "updated": "2026-10-12",
+  "count": 55,
   "items": [
     {
       "title": "Feature engineering improves cross-mode generalization in machine learning-based prediction of membrane capacitive deionization",
@@ -82,6 +82,34 @@
       "year": 2026,
       "date": "2026-01-01",
       "doi": "https://doi.org/10.1039/d5lp00363f",
+      "url": null,
+      "covers": []
+    },
+    {
+      "title": "Decoupling wetting and transport in a photothermal-hydrovoltaic membrane for cascade conversion of wastewater ammonia",
+      "authors": [
+        "J. Park",
+        "M. Lee",
+        "S. Lee",
+        "H. Kum",
+        "Z. Ullah",
+        "H. Cho",
+        "J. Lee",
+        "S. Y. Kim",
+        "J. Kim",
+        "C. Boo",
+        "M. Son",
+        "이창하",
+        "J.-S. Jang",
+        "J. Byun"
+      ],
+      "journal": "Energy & Environmental Science",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": 2026,
+      "date": "2026-01-01",
+      "doi": "https://doi.org/10.1039/d6ee05465j",
       "url": null,
       "covers": []
     },
