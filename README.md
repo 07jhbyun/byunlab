@@ -32,6 +32,7 @@ JSON 형식(쉼표, 따옴표, 괄호)이 깨지면 해당 영역이 사이트�
 - GitHub Actions(`.github/workflows/update-pubs.yml`)가 매주 월요일 00:00 UTC와 수동 실행(Actions > Update publications > Run workflow) 때 동작합니다. 목록이 바뀐 경우에만 커밋하고, 60일 비활성화를 막기 위해 한 달에 한 번 `data/last_checked.txt`를 기록합니다.
 - 잘못 들어온 논문은 `data/config.json`의 `exclude_dois`에 DOI를 추가해 뺍니다. OpenAlex에 없는 논문은 `data/manual_pubs.json`에 추가합니다.
 - 논문 표지 링크는 `data/config.json`의 `covers`에서 관리합니다.
+- 저자명이 한글 등 비라틴 문자로 들어오면 OpenAlex의 `raw_author_name`을 대신 씁니다. 그것도 비라틴이면 `data/config.json`의 `name_overrides`(예: `{"이창하": "Changha Lee"}`)에서 찾고, 없으면 원래 이름을 유지하고 경고 로그를 남깁니다.
 - 워크플로가 쓰는 Secret: `OPENALEX_API_KEY`, `OPENALEX_MAILTO`
 
 ## 4. 로컬에서 작업하기

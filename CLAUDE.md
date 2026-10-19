@@ -119,6 +119,7 @@ Home, The Team, Research, Publications, News 5개. Lab tour 페이지는 만들�
 - OpenAlex는 한 사람을 여러 저자 ID로 분리하는 경우가 있으므로 ID를 배열로 관리
 - `covers`: 저널 표지를 원 논문에 붙이는 목록. `{"parent_doi", "doi" 또는 "url", "label"}`. `label`은 저널 페이지 표기 그대로 (Front Cover, Inside Front Cover, Cover Picture, Cover Feature 등). 표지 DOI는 별도 논문 항목에서 제거됨
 - `covers`에 없는 표지(제목이 Front Cover:, Cover Feature:, Innentitelbild 등으로 시작)는 자동 제외되고 경고 로그를 남김. 필요하면 `covers`에 추가
+- `name_overrides`: 비라틴 문자 저자명 대체표 `{"원래 이름": "Latin Name"}`. 저자명이 비라틴이면 `raw_author_name` → `name_overrides` 순으로 대체, 둘 다 실패하면 경고 로그 후 원래 이름 유지
 
 ### 수집 로직
 1. `openalex_author_ids`의 각 ID에 대해 `/works?filter=author.id:{id}&per-page=200&cursor=*`로 전체 페이지 순회

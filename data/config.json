@@ -20,6 +20,7 @@
     "https://doi.org/10.1002/ange.202306118"
   ],
   "min_year": 2012,
+  "name_overrides": {},
   "covers": [
     {
       "parent_doi": "https://doi.org/10.1002/chem.202500967",

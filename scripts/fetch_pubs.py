@@ -146,6 +146,26 @@ def format_author(name):
     return " ".join([initial(t) for t in given] + family)
 
 
+def is_latin(name):
+    """True when every letter in the name is a Latin-script letter."""
+    return all("LATIN" in unicodedata.name(c, "") for c in name if c.isalpha())
+
+
+def author_name(authorship, overrides):
+    """Pick a Latin-script name: display_name, then raw_author_name, then name_overrides."""
+    name = clean_text(authorship["author"]["display_name"])
+    if is_latin(name):
+        return name
+    raw = clean_text(authorship.get("raw_author_name"))
+    if raw and is_latin(raw):
+        return raw
+    for key in (name, raw):
+        if key in overrides:
+            return overrides[key]
+    print(f"  warning: non-Latin author name kept: {name}", file=sys.stderr)
+    return name
+
+
 def title_key(title):
     return re.sub(r"[^a-z0-9]", "", clean_text(title).lower())
 
@@ -162,13 +182,13 @@ def format_pages(biblio):
     return first or last or None
 
 
-def to_item(work):
+def to_item(work, overrides):
     source = (work.get("primary_location") or {}).get("source") or {}
     biblio = work.get("biblio") or {}
     return {
         "title": clean_text(work.get("display_name")),
         "authors": [
-            format_author(a["author"]["display_name"])
+            format_author(author_name(a, overrides))
             for a in work.get("authorships") or []
             if (a.get("author") or {}).get("display_name")
         ],
@@ -225,6 +245,7 @@ def collect(config, auth):
     covers = config.get("covers", [])
     cover_dois = {bare_doi(c.get("doi")) for c in covers} - {""}
     min_year = config.get("min_year") or 0
+    overrides = {clean_text(k): v for k, v in config.get("name_overrides", {}).items()}
 
     merged = {}
     for author_id in config["openalex_author_ids"]:
@@ -235,7 +256,7 @@ def collect(config, auth):
                 continue
             if (work.get("publication_year") or 0) < min_year:
                 continue
-            item = to_item(work)
+            item = to_item(work, overrides)
             if not item["title"] or not item["doi"]:
                 continue
             doi = bare_doi(item["doi"])
