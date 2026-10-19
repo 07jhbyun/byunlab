@@ -12,7 +12,8 @@
     document.querySelectorAll('.js-email').forEach(el => {
       const a = document.createElement('a');
       a.href = 'mailto:' + address;
-      a.textContent = address;
+      // Display the obfuscated form; only the mailto href holds the real address.
+      a.textContent = 'jbyun [at] kist.re.kr';
       el.replaceWith(a);
     });
   }
